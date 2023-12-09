@@ -33,7 +33,7 @@ class TestWin(QWidget):
         self.txt_hinttest1 = QLineEdit(txt_hinttest1)
         self.txt_hinttest2 = QLineEdit(txt_hinttest2)
         self.txt_hinttest3 = QLineEdit(txt_hinttest3)
-        self.timer = QLabel(txt_timer)
+        self.text_timer = QLabel(txt_timer)
 
         self.txt_age = QLabel(txt_age)
         self.h_line = QHBoxLayout()
@@ -54,7 +54,7 @@ class TestWin(QWidget):
         self.l_line.addWidget(self.txt_hinttest3, alignment=Qt.AlignLeft)
         self.l_line.addWidget(self.btn_sendresults, alignment=Qt.AlignCenter)
 
-        self.r_line.addWidget(self.timer, alignment=Qt.AlignCenter)
+        self.r_line.addWidget(self.text_timer, alignment=Qt.AlignCenter)
         self.h_line.addLayout(self.l_line)
         self.h_line.addLayout(self.r_line)
         self.setLayout(self.h_line)
